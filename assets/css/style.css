@@ -1,0 +1,28 @@
+#banner{
+
+}
+
+#bannertitle{
+    font-family: 'Luminari';
+}
+
+p{
+    text-align: center;
+}
+
+.buttons{
+
+}
+
+.button{
+
+}
+
+body{
+    background: black;
+}
+
+.info{
+    margin-top: 40px;
+    color: white;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mythomagic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron" id=banner>
+        <h1 class="text-center" id=bannertitle>
+            Mythomagic
+        </h1>
+        <p> There are four icons below and a random number generated at the start of every game. When you click
+            on a god or goddess' icon, it will add a specific amount of points to the player's total score that is not
+            visible to you. Your goal is to click the icons until your score matches the random number shown. If your
+            score goes above, you lose the game.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row buttons">
+
+            <div class="col-md-3 button">
+                <figure class="figure">
+                    <img src="./assets/images/zeus.png" class="figure-img img-fluid" alt="Zeus" id=Zeus>
+                    <figcaption class="figure-caption text-center">Zeus</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-3 button">
+                <figure class="figure">
+                    <img src="./assets/images/hera.png" class="figure-img img-fluid" alt="Hera" id=Hera>
+                    <figcaption class="figure-caption text-center">Hera</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-3 button">
+                <figure class="figure">
+                    <img src="./assets/images/ares.png" class="figure-img img-fluid" alt="Ares" id=Ares>
+                    <figcaption class="figure-caption text-center">Ares</figcaption>
+                </figure>
+            </div>
+
+            <div class="col-md-3 button">
+                <figure class="figure">
+                    <img src="./assets/images/athena.png" class="figure-img img-fluid" alt="Athena" id=Athena>
+                    <figcaption class="figure-caption text-center">Athena</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+        <div class="row info">
+            <div class="col-md-3 text-center" id="number">
+                Goal: 0
+            </div>
+            <div class="col-md-3 text-center" id="score">
+                Score: 0
+            </div>
+            <div class="col-md-3 text-center" id="wins">
+                Wins: 0
+            </div>
+            <div class="col-md-3 text-center" id="losses">
+                Losses: 0
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>
